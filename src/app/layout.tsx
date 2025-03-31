@@ -1,6 +1,9 @@
 // src/app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
+import Link from "next/link";
+
+
 
 export const metadata: Metadata = {
   title: "Data Driven Consulting",
@@ -20,15 +23,15 @@ export default function RootLayout({
           <div className="container mx-auto px-4 flex justify-between items-center">
             <h1 className="text-xl font-bold">Data Driven Consulting</h1>
             <nav className="space-x-4 text-sm">
-              <a href="/" className="text-gray-700 hover:text-blue-600">
-                Start
-              </a>
-              <a href="/about" className="text-gray-700 hover:text-blue-600">
-                Über mich
-              </a>
-              <a href="/contact" className="text-gray-700 hover:text-blue-600">
-                Kontakt
-              </a>
+            <Link href="/" className="text-gray-700 hover:text-blue-600">
+              Start
+            </Link>
+            <Link href="/" className="text-gray-700 hover:text-blue-600">
+              Über Mich
+            </Link>
+            <Link href="/" className="text-gray-700 hover:text-blue-600">
+              Kontakt
+            </Link>
             </nav>
           </div>
         </header>
